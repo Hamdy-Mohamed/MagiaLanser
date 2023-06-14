@@ -91,7 +91,7 @@ ul li a:hover {
 }
 
 .title {
-  background-image: url(../img/Rectangle\ 2.png);
+  background-image: url(/src/img/Rectangle\ 2.png);
   height: 82.8vh;
   display: flex;
   justify-content: center;
