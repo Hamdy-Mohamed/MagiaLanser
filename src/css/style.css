@@ -380,28 +380,28 @@ h2 {
   }
 }
 
-@media only screen and (min-width:1024px) {
-  html{
+@media only screen and (min-width: 1024px) {
+  html {
     font-size: 16px;
   }
-  .projects{
+  .projects {
     flex-wrap: nowrap;
   }
 }
 
-@media only screen and (min-width:1641px) {
-  html{
+@media only screen and (min-width: 1641px) {
+  html {
     font-size: 18px;
   }
 }
-@media only screen and (min-width:1841px) {
-  html{
+@media only screen and (min-width: 1841px) {
+  html {
     font-size: 20px;
   }
 }
 
-@media only screen and (min-width:2141px) {
-  html{
+@media only screen and (min-width: 2141px) {
+  html {
     font-size: 22px;
   }
 }
