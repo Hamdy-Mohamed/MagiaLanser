@@ -32,6 +32,34 @@ section {
 .logo img {
   height: 7rem;
 }
+.mobile_nav_btn {
+  min-width: 4rem;
+  height: 4rem;
+  background: var(--color_nav);
+  position: fixed;
+  right: 0;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 1px 1px 21px 0px var(--btn_hover);
+  cursor: pointer;
+  user-select: none;
+  z-index: 999;
+}
+.mobile_nav_btn:hover {
+  background: var(--btn_hover);
+  color: var(--color);
+  box-shadow: 1px 1px 21px 0px var(--btn_hover);
+}
+.mobile_nav {
+  display: none;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, black, var(--color_nav));
+  width: 100%;
+  text-align: center;
+}
 nav {
   background: var(--color_nav);
   display: flex;
@@ -321,7 +349,10 @@ h2 {
   html {
     font-size: 11px;
   }
-  ul li {
+  nav .nav li {
+    display: none;
+  }
+  .mobile_nav {
     display: none;
   }
   .title :nth-child(1) {
@@ -358,7 +389,6 @@ h2 {
     height: 3rem;
   }
 }
-
 @media only screen and (min-width: 655px) and (max-width: 821px) {
   html {
     font-size: 15px;
@@ -366,6 +396,10 @@ h2 {
   section {
     min-height: 100vh;
   }
+  .mobile_nav_btn {
+    display: none;
+  }
+
   .projects {
     flex-wrap: nowrap;
   }
@@ -379,13 +413,15 @@ h2 {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   html {
     font-size: 16px;
   }
   .projects {
     flex-wrap: nowrap;
+  }
+  .mobile_nav_btn {
+    display: none;
   }
 }
 

@@ -17,3 +17,17 @@ let login_btn = document.querySelector(".nav_btn");
 login_btn.addEventListener("click", () => {
   window.open("src/pages/login.html", "_self");
 });
+
+
+// navbar mobile
+let mobile_nav = document.querySelector(".mobile_nav");
+let nav_btn = document.querySelector(".mobile_nav_btn")
+nav_btn.addEventListener("click", function() {
+  const currentDisplay = getComputedStyle(mobile_nav).display;
+
+  if (currentDisplay === "flex") {
+    mobile_nav.style.display = "none";
+  } else {
+    mobile_nav.style.display = "flex";
+  }
+});
